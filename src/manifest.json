@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Pinpoint",
+  "version": "0.1.0",
+  "description": "Pin UI elements, comment on them, and copy precise references for AI coding agents.",
+  "minimum_chrome_version": "120",
+  "permissions": ["activeTab", "scripting", "storage", "downloads", "downloads.ui"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Pinpoint" },
+  "commands": {
+    "toggle-pin-mode": {
+      "suggested_key": { "default": "Alt+P", "mac": "Alt+P" },
+      "description": "Toggle pin mode"
+    }
+  }
+}
